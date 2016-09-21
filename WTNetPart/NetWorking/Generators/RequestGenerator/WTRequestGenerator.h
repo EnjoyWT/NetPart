@@ -15,4 +15,9 @@
 - (NSURLRequest *)generatePOSTRequestWithServiceIdentifier:(Class)serviceIdentifier requestParams:(NSDictionary *)requestParams relativeURL:(NSString *)relativeUrl;
 - (NSURLRequest *)generatePutRequestWithServiceIdentifier:(Class)serviceIdentifier requestParams:(NSDictionary *)requestParams relativeURL:(NSString *)relativeUrl;
 - (NSURLRequest *)generateDeleteRequestWithServiceIdentifier:(Class)serviceIdentifier requestParams:(NSDictionary *)requestParams relativeURL:(NSString *)relativeUrl;
+
+
+- (NSURLRequest *)generateUploadRequestWithServiceIdentifier:(Class)serviceIdentifier relativeURL:(NSString *)relativeUrl;
+- (NSURLRequest *)generateUploadRequestWithServiceIdentifier:(Class)serviceIdentifier requestParams:(NSDictionary *)requestParams relativeURL:(NSString *)relativeUrl withData:(NSData *)data ;
+- (NSURLRequest *)generateDownloadRequestWithServiceIdentifier:(Class)serviceIdentifier relativeURL:(NSString *)relativeUrl;
 @end

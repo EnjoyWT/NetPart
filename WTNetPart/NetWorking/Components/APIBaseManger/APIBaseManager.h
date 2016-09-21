@@ -220,6 +220,12 @@ typedef NS_ENUM (NSUInteger, WTAPIManagerRequestType){
 - (NSInteger)loadData;
 //这个方法原作者并不推荐,但是我还是想用,以后弄懂原因再修改 ^_^
 - (NSInteger)loadDataWithParams:(NSDictionary *)params;
+
+
+- (NSInteger)uploadFromData:(NSData *)data withParams:(NSDictionary*)dic WithProgrest:(void (^)(NSProgress *uploadProgress))uploadProgressBlock;
+
+- (NSInteger)downloadToPath:(NSString *)targetPath Progress:(void (^)(NSProgress *uploadProgress))downloadProgressBlock;
+
 - (void)cancelAllRequests;
 - (void)cancelRequestWithRequestId:(NSInteger)requestID;
 

@@ -186,6 +186,141 @@ __strong typeof(weakSelf) strongSelf = weakSelf;                                
     return requestId;
 }
 
+- (NSInteger)uploadFromData:(NSData *)data withParams:(NSDictionary*)dic WithProgrest:(void (^)(NSProgress *uploadProgress))uploadProgressBlock{
+    
+    NSInteger requestId = 0;
+    NSDictionary *apiParams = [self reformParams:dic];
+    if ([self shouldCallAPIWithParams:apiParams]) {
+        
+        if (self.validator == nil||[self.validator manager:self isCorrectWithParamsData:apiParams]) {
+            
+            __weak typeof(self) weakSelf = self;
+            // 实际的网络请求
+            if ([self isReachable]) {
+                self.isLoading = YES;
+                switch (self.child.requestType)
+                {
+                    case WTAPIManagerRequestTypeGet:
+                        break;
+                    case WTAPIManagerRequestTypePut:
+                        break;
+                    case WTAPIManagerRequestTypeDelete:
+                        break;
+                    case WTAPIManagerRequestTypePost:
+                    {
+                        requestId  = [[WTApiProxy sharedInstance] callUploadWithData:data withParams:dic serviceIdentifier:self.child.serviceType relativeURL:self.child.relativeURL progress:uploadProgressBlock success:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf successedOnCallingAPI:response];
+                        } fail:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf failedOnCallingAPI:response withErrorType:WTAPIManagerErrorTypeDefault];
+                        }];
+                        
+                        [self.requestIdList addObject:@(requestId)];
+                    }
+                        break;
+                    default:
+                    {
+                        requestId  = [[WTApiProxy sharedInstance] callUploadWithData:data withParams:dic serviceIdentifier:self.child.serviceType relativeURL:self.child.relativeURL progress:uploadProgressBlock success:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf successedOnCallingAPI:response];
+                        } fail:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf failedOnCallingAPI:response withErrorType:WTAPIManagerErrorTypeDefault];
+                        }];
+                        
+                        [self.requestIdList addObject:@(requestId)];
+                    }
+                        
+                        break;
+                }
+                NSMutableDictionary *params = [apiParams mutableCopy];
+                params[WTAPIBaseManagerRequestID] = @(requestId);
+                [self afterCallingAPIWithParams:params];
+                return requestId;
+                
+            } else {
+                
+                [self failedOnCallingAPI:nil withErrorType:WTAPIManagerErrorTypeNoNetWork];
+                return requestId;
+            }
+        } else {
+            
+            [self failedOnCallingAPI:nil withErrorType:WTAPIManagerErrorTypeParamsError];
+            return requestId;
+        }
+    }
+    return requestId;
+}
+
+- (NSInteger)downloadToPath:(NSString *)targetPath Progress:(void (^)(NSProgress *uploadProgress))downloadProgressBlock {
+    
+    NSInteger requestId = 0;
+    NSMutableDictionary *apiParams= [NSMutableDictionary dictionary];
+    [apiParams setObject:targetPath forKey:@"targetPath"];
+    if ([self shouldCallAPIWithParams:apiParams]) {
+        
+        if (self.validator == nil||[self.validator manager:self isCorrectWithParamsData:apiParams]) {
+            
+            __weak typeof(self) weakSelf = self;
+            // 实际的网络请求
+            if ([self isReachable]) {
+                self.isLoading = YES;
+                switch (self.child.requestType)
+                {
+                    case WTAPIManagerRequestTypePost:
+                        break;
+                    case WTAPIManagerRequestTypePut:
+                        break;
+                    case WTAPIManagerRequestTypeDelete:
+                        break;
+                    case WTAPIManagerRequestTypeGet :
+                    {
+                        requestId  = [[WTApiProxy sharedInstance]callDownloadToPath:targetPath withServiceIdentifier:self.child.serviceType relativeURL:self.child.relativeURL progress:downloadProgressBlock success:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf successedOnCallingAPI:response];
+                        } fail:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf failedOnCallingAPI:response withErrorType:WTAPIManagerErrorTypeDefault];
+                        }];
+                        
+                        [self.requestIdList addObject:@(requestId)];
+                    }
+                        break;
+                    default:
+                    {
+                        requestId  = [[WTApiProxy sharedInstance]callDownloadToPath:targetPath withServiceIdentifier:self.child.serviceType relativeURL:self.child.relativeURL progress:downloadProgressBlock success:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf successedOnCallingAPI:response];
+                        } fail:^(WTURLResponse *response) {
+                            __strong typeof(weakSelf) strongSelf = weakSelf;
+                            [strongSelf failedOnCallingAPI:response withErrorType:WTAPIManagerErrorTypeDefault];
+                        }];
+                        
+                        [self.requestIdList addObject:@(requestId)];
+                    }
+                        break;
+                }
+                NSMutableDictionary *params = [apiParams mutableCopy];
+                params[WTAPIBaseManagerRequestID] = @(requestId);
+                [self afterCallingAPIWithParams:params];
+                return requestId;
+                
+            } else {
+                
+                [self failedOnCallingAPI:nil withErrorType:WTAPIManagerErrorTypeNoNetWork];
+                return requestId;
+            }
+        } else {
+            
+            [self failedOnCallingAPI:nil withErrorType:WTAPIManagerErrorTypeParamsError];
+            return requestId;
+        }
+    }
+    return requestId;
+    
+}
+
 #pragma mark - api callbacks
 - (void)successedOnCallingAPI:(WTURLResponse *)response
 {

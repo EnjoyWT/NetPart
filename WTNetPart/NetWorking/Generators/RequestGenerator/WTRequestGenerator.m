@@ -99,6 +99,25 @@
     request.requestParams = requestParams;
     return request;
 }
+
+- (NSURLRequest *)generateUploadRequestWithServiceIdentifier:(Class)serviceIdentifier requestParams:(NSDictionary *)requestParams relativeURL:(NSString *)relativeUrl withData:(NSData *)data {
+    WTService *service = [[WTServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier];
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@/%@", service.apiBaseUrl, service.apiVersion, relativeUrl];
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:urlString parameters: requestParams constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        [formData appendPartWithFileData:data name:@"pic" fileName:@"h.jpg" mimeType:@"image/jpeg"];
+    } error:nil];
+    
+    return request;
+}
+- (NSURLRequest *)generateDownloadRequestWithServiceIdentifier:(Class)serviceIdentifier relativeURL:(NSString *)relativeUrl {
+    WTService *service = [[WTServiceFactory sharedInstance] serviceWithIdentifier:serviceIdentifier];
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@/%@", service.apiBaseUrl, service.apiVersion, relativeUrl];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    
+    return request;
+}
 #pragma mark - getters and setters
 - (AFHTTPRequestSerializer *)httpRequestSerializer
 {

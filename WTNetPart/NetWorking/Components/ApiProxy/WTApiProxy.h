@@ -17,6 +17,10 @@ typedef void(^WTCallback)(WTURLResponse *response);
 - (NSInteger)callPUTWithParams:(NSDictionary *)params serviceIdentifier:(Class)servieIdentifier relativeURL:(NSString *)relativeUrl success:(WTCallback)success fail:(WTCallback)fail;
 - (NSInteger)callDELETEWithParams:(NSDictionary *)params serviceIdentifier:(Class)servieIdentifier relativeURL:(NSString *)relativeUrl success:(WTCallback)success fail:(WTCallback)fail;
 
+- (NSInteger)callUploadWithFilePath:(NSString *)filePath serviceIdentifier:(Class)servieIdentifier relativeURL:(NSString *)relativeUrl progress:(void (^)(NSProgress *uploadProgress)) uploadProgressBlock success:(WTCallback)success fail:(WTCallback)fail;
+- (NSInteger)callUploadWithData:(NSData*)fileData withParams:(NSDictionary*)Params serviceIdentifier:(Class)servieIdentifier relativeURL:(NSString *)relativeUrl progress:(void (^)(NSProgress *uploadProgress)) uploadProgressBlock success:(WTCallback)success fail:(WTCallback)fail;
+
+- (NSInteger)callDownloadToPath:(NSString *)targetPath withServiceIdentifier:(Class)servieIdentifier relativeURL:(NSString *)relativeUrl progress:(void (^)(NSProgress *downloadProgress))downloadProgress success:(WTCallback)success fail:(WTCallback)fail ;
 
 - (NSNumber *)callApiWithRequest:(NSURLRequest *)request success:(WTCallback)success fail:(WTCallback)fail;
 - (void)cancelRequestWithRequestID:(NSNumber *)requestID;
