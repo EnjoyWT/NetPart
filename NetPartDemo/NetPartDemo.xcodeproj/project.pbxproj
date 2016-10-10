@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169C057E1DAB228700C18A94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C057D1DAB228700C18A94 /* main.m */; };
+		169C05811DAB228700C18A94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05801DAB228700C18A94 /* AppDelegate.m */; };
+		169C05841DAB228700C18A94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05831DAB228700C18A94 /* ViewController.m */; };
+		169C05871DAB228700C18A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169C05851DAB228700C18A94 /* Main.storyboard */; };
+		169C05891DAB228700C18A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169C05881DAB228700C18A94 /* Assets.xcassets */; };
+		169C058C1DAB228700C18A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169C058A1DAB228700C18A94 /* LaunchScreen.storyboard */; };
+		169C05CE1DAB22C300C18A94 /* NSArray+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05971DAB22C300C18A94 /* NSArray+NetworkingMethods.m */; };
+		169C05CF1DAB22C300C18A94 /* NSDictionary+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05991DAB22C300C18A94 /* NSDictionary+NetworkingMethods.m */; };
+		169C05D01DAB22C300C18A94 /* NSMutableString+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C059B1DAB22C300C18A94 /* NSMutableString+NetworkingMethods.m */; };
+		169C05D11DAB22C300C18A94 /* NSObject+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C059D1DAB22C300C18A94 /* NSObject+NetworkingMethods.m */; };
+		169C05D21DAB22C300C18A94 /* NSString+NetworkingMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C059F1DAB22C300C18A94 /* NSString+NetworkingMethods.m */; };
+		169C05D31DAB22C300C18A94 /* NSURLRequest+RequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05A11DAB22C300C18A94 /* NSURLRequest+RequestParams.m */; };
+		169C05D41DAB22C300C18A94 /* APIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05A51DAB22C300C18A94 /* APIBaseManager.m */; };
+		169C05D51DAB22C300C18A94 /* WTApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05A81DAB22C300C18A94 /* WTApiProxy.m */; };
+		169C05D61DAB22C300C18A94 /* WTCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05AB1DAB22C300C18A94 /* WTCache.m */; };
+		169C05D71DAB22C300C18A94 /* WTCachedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05AD1DAB22C300C18A94 /* WTCachedObject.m */; };
+		169C05D81DAB22C300C18A94 /* WTLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05B01DAB22C300C18A94 /* WTLocationManager.m */; };
+		169C05D91DAB22C300C18A94 /* WTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05B31DAB22C300C18A94 /* WTLogger.m */; };
+		169C05DA1DAB22C300C18A94 /* WTURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05B61DAB22C300C18A94 /* WTURLResponse.m */; };
+		169C05DB1DAB22C300C18A94 /* WTRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05BA1DAB22C300C18A94 /* WTRequestGenerator.m */; };
+		169C05DC1DAB22C300C18A94 /* WTSignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05BD1DAB22C300C18A94 /* WTSignatureGenerator.m */; };
+		169C05DD1DAB22C300C18A94 /* WTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05C11DAB22C300C18A94 /* WTService.m */; };
+		169C05DE1DAB22C300C18A94 /* WTServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05C31DAB22C300C18A94 /* WTServiceFactory.m */; };
+		169C05DF1DAB22C300C18A94 /* WTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05C81DAB22C300C18A94 /* WTAppContext.m */; };
+		169C05E01DAB22C300C18A94 /* WTNetworkingConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169C05C91DAB22C300C18A94 /* WTNetworkingConfiguration.plist */; };
+		169C05E11DAB22C300C18A94 /* WTLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05CC1DAB22C300C18A94 /* WTLoggerConfiguration.m */; };
+		169C05E51DAB261A00C18A94 /* RequestFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05E41DAB261A00C18A94 /* RequestFirst.m */; };
+		169C05E91DAB272500C18A94 /* ServicFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05E81DAB272500C18A94 /* ServicFirst.m */; };
+		169C05ED1DAB2D3700C18A94 /* FirstReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 169C05EC1DAB2D3700C18A94 /* FirstReformer.m */; };
+		F6FA908DF883D6752A8692D0 /* libPods-NetPartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F12092DC147B86C0F71A35A4 /* libPods-NetPartDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		169C05791DAB228700C18A94 /* NetPartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetPartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169C057D1DAB228700C18A94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		169C057F1DAB228700C18A94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		169C05801DAB228700C18A94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		169C05821DAB228700C18A94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		169C05831DAB228700C18A94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		169C05861DAB228700C18A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		169C05881DAB228700C18A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169C058B1DAB228700C18A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		169C058D1DAB228700C18A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169C05961DAB22C300C18A94 /* NSArray+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NetworkingMethods.h"; sourceTree = "<group>"; };
+		169C05971DAB22C300C18A94 /* NSArray+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NetworkingMethods.m"; sourceTree = "<group>"; };
+		169C05981DAB22C300C18A94 /* NSDictionary+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NetworkingMethods.h"; sourceTree = "<group>"; };
+		169C05991DAB22C300C18A94 /* NSDictionary+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NetworkingMethods.m"; sourceTree = "<group>"; };
+		169C059A1DAB22C300C18A94 /* NSMutableString+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+NetworkingMethods.h"; sourceTree = "<group>"; };
+		169C059B1DAB22C300C18A94 /* NSMutableString+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+NetworkingMethods.m"; sourceTree = "<group>"; };
+		169C059C1DAB22C300C18A94 /* NSObject+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NetworkingMethods.h"; sourceTree = "<group>"; };
+		169C059D1DAB22C300C18A94 /* NSObject+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NetworkingMethods.m"; sourceTree = "<group>"; };
+		169C059E1DAB22C300C18A94 /* NSString+NetworkingMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NetworkingMethods.h"; sourceTree = "<group>"; };
+		169C059F1DAB22C300C18A94 /* NSString+NetworkingMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NetworkingMethods.m"; sourceTree = "<group>"; };
+		169C05A01DAB22C300C18A94 /* NSURLRequest+RequestParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+RequestParams.h"; sourceTree = "<group>"; };
+		169C05A11DAB22C300C18A94 /* NSURLRequest+RequestParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+RequestParams.m"; sourceTree = "<group>"; };
+		169C05A41DAB22C300C18A94 /* APIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIBaseManager.h; sourceTree = "<group>"; };
+		169C05A51DAB22C300C18A94 /* APIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIBaseManager.m; sourceTree = "<group>"; };
+		169C05A71DAB22C300C18A94 /* WTApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTApiProxy.h; sourceTree = "<group>"; };
+		169C05A81DAB22C300C18A94 /* WTApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTApiProxy.m; sourceTree = "<group>"; };
+		169C05AA1DAB22C300C18A94 /* WTCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCache.h; sourceTree = "<group>"; };
+		169C05AB1DAB22C300C18A94 /* WTCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCache.m; sourceTree = "<group>"; };
+		169C05AC1DAB22C300C18A94 /* WTCachedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCachedObject.h; sourceTree = "<group>"; };
+		169C05AD1DAB22C300C18A94 /* WTCachedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCachedObject.m; sourceTree = "<group>"; };
+		169C05AF1DAB22C300C18A94 /* WTLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLocationManager.h; sourceTree = "<group>"; };
+		169C05B01DAB22C300C18A94 /* WTLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLocationManager.m; sourceTree = "<group>"; };
+		169C05B21DAB22C300C18A94 /* WTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLogger.h; sourceTree = "<group>"; };
+		169C05B31DAB22C300C18A94 /* WTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLogger.m; sourceTree = "<group>"; };
+		169C05B51DAB22C300C18A94 /* WTURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTURLResponse.h; sourceTree = "<group>"; };
+		169C05B61DAB22C300C18A94 /* WTURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTURLResponse.m; sourceTree = "<group>"; };
+		169C05B91DAB22C300C18A94 /* WTRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRequestGenerator.h; sourceTree = "<group>"; };
+		169C05BA1DAB22C300C18A94 /* WTRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRequestGenerator.m; sourceTree = "<group>"; };
+		169C05BC1DAB22C300C18A94 /* WTSignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSignatureGenerator.h; sourceTree = "<group>"; };
+		169C05BD1DAB22C300C18A94 /* WTSignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSignatureGenerator.m; sourceTree = "<group>"; };
+		169C05BE1DAB22C300C18A94 /* NetWorkReadme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkReadme.h; sourceTree = "<group>"; };
+		169C05C01DAB22C300C18A94 /* WTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTService.h; sourceTree = "<group>"; };
+		169C05C11DAB22C300C18A94 /* WTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTService.m; sourceTree = "<group>"; };
+		169C05C21DAB22C300C18A94 /* WTServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTServiceFactory.h; sourceTree = "<group>"; };
+		169C05C31DAB22C300C18A94 /* WTServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTServiceFactory.m; sourceTree = "<group>"; };
+		169C05C41DAB22C300C18A94 /* WTNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNetWorking.h; sourceTree = "<group>"; };
+		169C05C71DAB22C300C18A94 /* WTAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppContext.h; sourceTree = "<group>"; };
+		169C05C81DAB22C300C18A94 /* WTAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppContext.m; sourceTree = "<group>"; };
+		169C05C91DAB22C300C18A94 /* WTNetworkingConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WTNetworkingConfiguration.plist; sourceTree = "<group>"; };
+		169C05CB1DAB22C300C18A94 /* WTLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLoggerConfiguration.h; sourceTree = "<group>"; };
+		169C05CC1DAB22C300C18A94 /* WTLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLoggerConfiguration.m; sourceTree = "<group>"; };
+		169C05CD1DAB22C300C18A94 /* WTNetworkingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNetworkingConfiguration.h; sourceTree = "<group>"; };
+		169C05E31DAB261A00C18A94 /* RequestFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFirst.h; sourceTree = "<group>"; };
+		169C05E41DAB261A00C18A94 /* RequestFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFirst.m; sourceTree = "<group>"; };
+		169C05E71DAB272500C18A94 /* ServicFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicFirst.h; sourceTree = "<group>"; };
+		169C05E81DAB272500C18A94 /* ServicFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicFirst.m; sourceTree = "<group>"; };
+		169C05EB1DAB2D3700C18A94 /* FirstReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstReformer.h; sourceTree = "<group>"; };
+		169C05EC1DAB2D3700C18A94 /* FirstReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstReformer.m; sourceTree = "<group>"; };
+		75FA7316B3341D0F3357C710 /* Pods-NetPartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetPartDemo/Pods-NetPartDemo.release.xcconfig"; sourceTree = "<group>"; };
+		769EFBD99B3BF830C49AAACB /* Pods-NetPartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetPartDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetPartDemo/Pods-NetPartDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F12092DC147B86C0F71A35A4 /* libPods-NetPartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetPartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169C05761DAB228700C18A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FA908DF883D6752A8692D0 /* libPods-NetPartDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169C05701DAB228700C18A94 = {
+			isa = PBXGroup;
+			children = (
+				169C057B1DAB228700C18A94 /* NetPartDemo */,
+				169C057A1DAB228700C18A94 /* Products */,
+				91AE6826716E111816D6893C /* Pods */,
+				6B9926A81380E76C998DE5F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		169C057A1DAB228700C18A94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169C05791DAB228700C18A94 /* NetPartDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169C057B1DAB228700C18A94 /* NetPartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				169C05931DAB22C300C18A94 /* WTNetPart */,
+				169C05E21DAB25E900C18A94 /* Requests */,
+				169C05E61DAB265B00C18A94 /* Servers */,
+				169C05EA1DAB2CDA00C18A94 /* Reformers */,
+				169C057F1DAB228700C18A94 /* AppDelegate.h */,
+				169C05801DAB228700C18A94 /* AppDelegate.m */,
+				169C05821DAB228700C18A94 /* ViewController.h */,
+				169C05831DAB228700C18A94 /* ViewController.m */,
+				169C05851DAB228700C18A94 /* Main.storyboard */,
+				169C05881DAB228700C18A94 /* Assets.xcassets */,
+				169C058A1DAB228700C18A94 /* LaunchScreen.storyboard */,
+				169C058D1DAB228700C18A94 /* Info.plist */,
+				169C057C1DAB228700C18A94 /* Supporting Files */,
+			);
+			path = NetPartDemo;
+			sourceTree = "<group>";
+		};
+		169C057C1DAB228700C18A94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169C057D1DAB228700C18A94 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		169C05931DAB22C300C18A94 /* WTNetPart */ = {
+			isa = PBXGroup;
+			children = (
+				169C05941DAB22C300C18A94 /* NetWorking */,
+				169C05C51DAB22C300C18A94 /* NetWorkingCustoms */,
+			);
+			path = WTNetPart;
+			sourceTree = "<group>";
+		};
+		169C05941DAB22C300C18A94 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				169C05C41DAB22C300C18A94 /* WTNetWorking.h */,
+				169C05BE1DAB22C300C18A94 /* NetWorkReadme.h */,
+				169C05A21DAB22C300C18A94 /* Components */,
+				169C05B71DAB22C300C18A94 /* Generators */,
+				169C05BF1DAB22C300C18A94 /* Services */,
+				169C05951DAB22C300C18A94 /* Categories */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		169C05951DAB22C300C18A94 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				169C05961DAB22C300C18A94 /* NSArray+NetworkingMethods.h */,
+				169C05971DAB22C300C18A94 /* NSArray+NetworkingMethods.m */,
+				169C05981DAB22C300C18A94 /* NSDictionary+NetworkingMethods.h */,
+				169C05991DAB22C300C18A94 /* NSDictionary+NetworkingMethods.m */,
+				169C059A1DAB22C300C18A94 /* NSMutableString+NetworkingMethods.h */,
+				169C059B1DAB22C300C18A94 /* NSMutableString+NetworkingMethods.m */,
+				169C059C1DAB22C300C18A94 /* NSObject+NetworkingMethods.h */,
+				169C059D1DAB22C300C18A94 /* NSObject+NetworkingMethods.m */,
+				169C059E1DAB22C300C18A94 /* NSString+NetworkingMethods.h */,
+				169C059F1DAB22C300C18A94 /* NSString+NetworkingMethods.m */,
+				169C05A01DAB22C300C18A94 /* NSURLRequest+RequestParams.h */,
+				169C05A11DAB22C300C18A94 /* NSURLRequest+RequestParams.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		169C05A21DAB22C300C18A94 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				169C05A31DAB22C300C18A94 /* APIBaseManger */,
+				169C05A61DAB22C300C18A94 /* ApiProxy */,
+				169C05A91DAB22C300C18A94 /* CacheComponents */,
+				169C05AE1DAB22C300C18A94 /* LocationManager */,
+				169C05B11DAB22C300C18A94 /* LogComponents */,
+				169C05B41DAB22C300C18A94 /* URLResponse */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		169C05A31DAB22C300C18A94 /* APIBaseManger */ = {
+			isa = PBXGroup;
+			children = (
+				169C05A41DAB22C300C18A94 /* APIBaseManager.h */,
+				169C05A51DAB22C300C18A94 /* APIBaseManager.m */,
+			);
+			path = APIBaseManger;
+			sourceTree = "<group>";
+		};
+		169C05A61DAB22C300C18A94 /* ApiProxy */ = {
+			isa = PBXGroup;
+			children = (
+				169C05A71DAB22C300C18A94 /* WTApiProxy.h */,
+				169C05A81DAB22C300C18A94 /* WTApiProxy.m */,
+			);
+			path = ApiProxy;
+			sourceTree = "<group>";
+		};
+		169C05A91DAB22C300C18A94 /* CacheComponents */ = {
+			isa = PBXGroup;
+			children = (
+				169C05AA1DAB22C300C18A94 /* WTCache.h */,
+				169C05AB1DAB22C300C18A94 /* WTCache.m */,
+				169C05AC1DAB22C300C18A94 /* WTCachedObject.h */,
+				169C05AD1DAB22C300C18A94 /* WTCachedObject.m */,
+			);
+			path = CacheComponents;
+			sourceTree = "<group>";
+		};
+		169C05AE1DAB22C300C18A94 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				169C05AF1DAB22C300C18A94 /* WTLocationManager.h */,
+				169C05B01DAB22C300C18A94 /* WTLocationManager.m */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		169C05B11DAB22C300C18A94 /* LogComponents */ = {
+			isa = PBXGroup;
+			children = (
+				169C05B21DAB22C300C18A94 /* WTLogger.h */,
+				169C05B31DAB22C300C18A94 /* WTLogger.m */,
+			);
+			path = LogComponents;
+			sourceTree = "<group>";
+		};
+		169C05B41DAB22C300C18A94 /* URLResponse */ = {
+			isa = PBXGroup;
+			children = (
+				169C05B51DAB22C300C18A94 /* WTURLResponse.h */,
+				169C05B61DAB22C300C18A94 /* WTURLResponse.m */,
+			);
+			path = URLResponse;
+			sourceTree = "<group>";
+		};
+		169C05B71DAB22C300C18A94 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				169C05B81DAB22C300C18A94 /* RequestGenerator */,
+				169C05BB1DAB22C300C18A94 /* SignatureGenerator */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		169C05B81DAB22C300C18A94 /* RequestGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				169C05B91DAB22C300C18A94 /* WTRequestGenerator.h */,
+				169C05BA1DAB22C300C18A94 /* WTRequestGenerator.m */,
+			);
+			path = RequestGenerator;
+			sourceTree = "<group>";
+		};
+		169C05BB1DAB22C300C18A94 /* SignatureGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				169C05BC1DAB22C300C18A94 /* WTSignatureGenerator.h */,
+				169C05BD1DAB22C300C18A94 /* WTSignatureGenerator.m */,
+			);
+			path = SignatureGenerator;
+			sourceTree = "<group>";
+		};
+		169C05BF1DAB22C300C18A94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				169C05C01DAB22C300C18A94 /* WTService.h */,
+				169C05C11DAB22C300C18A94 /* WTService.m */,
+				169C05C21DAB22C300C18A94 /* WTServiceFactory.h */,
+				169C05C31DAB22C300C18A94 /* WTServiceFactory.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		169C05C51DAB22C300C18A94 /* NetWorkingCustoms */ = {
+			isa = PBXGroup;
+			children = (
+				169C05C61DAB22C300C18A94 /* AppContext */,
+				169C05CA1DAB22C300C18A94 /* Configurations */,
+			);
+			path = NetWorkingCustoms;
+			sourceTree = "<group>";
+		};
+		169C05C61DAB22C300C18A94 /* AppContext */ = {
+			isa = PBXGroup;
+			children = (
+				169C05C71DAB22C300C18A94 /* WTAppContext.h */,
+				169C05C81DAB22C300C18A94 /* WTAppContext.m */,
+				169C05C91DAB22C300C18A94 /* WTNetworkingConfiguration.plist */,
+			);
+			path = AppContext;
+			sourceTree = "<group>";
+		};
+		169C05CA1DAB22C300C18A94 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				169C05CB1DAB22C300C18A94 /* WTLoggerConfiguration.h */,
+				169C05CC1DAB22C300C18A94 /* WTLoggerConfiguration.m */,
+				169C05CD1DAB22C300C18A94 /* WTNetworkingConfiguration.h */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		169C05E21DAB25E900C18A94 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				169C05E31DAB261A00C18A94 /* RequestFirst.h */,
+				169C05E41DAB261A00C18A94 /* RequestFirst.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		169C05E61DAB265B00C18A94 /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				169C05E71DAB272500C18A94 /* ServicFirst.h */,
+				169C05E81DAB272500C18A94 /* ServicFirst.m */,
+			);
+			name = Servers;
+			sourceTree = "<group>";
+		};
+		169C05EA1DAB2CDA00C18A94 /* Reformers */ = {
+			isa = PBXGroup;
+			children = (
+				169C05EB1DAB2D3700C18A94 /* FirstReformer.h */,
+				169C05EC1DAB2D3700C18A94 /* FirstReformer.m */,
+			);
+			name = Reformers;
+			sourceTree = "<group>";
+		};
+		6B9926A81380E76C998DE5F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F12092DC147B86C0F71A35A4 /* libPods-NetPartDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91AE6826716E111816D6893C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				769EFBD99B3BF830C49AAACB /* Pods-NetPartDemo.debug.xcconfig */,
+				75FA7316B3341D0F3357C710 /* Pods-NetPartDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169C05781DAB228700C18A94 /* NetPartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169C05901DAB228700C18A94 /* Build configuration list for PBXNativeTarget "NetPartDemo" */;
+			buildPhases = (
+				CA1A9CA0C6F2634B851ABEB9 /* [CP] Check Pods Manifest.lock */,
+				169C05751DAB228700C18A94 /* Sources */,
+				169C05761DAB228700C18A94 /* Frameworks */,
+				169C05771DAB228700C18A94 /* Resources */,
+				E9A66E2B4F957E0DCEA1180A /* [CP] Embed Pods Frameworks */,
+				ABEEE48739B87F1D18C11EAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetPartDemo;
+			productName = NetPartDemo;
+			productReference = 169C05791DAB228700C18A94 /* NetPartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169C05711DAB228700C18A94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = WT;
+				TargetAttributes = {
+					169C05781DAB228700C18A94 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DA887996D9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 169C05741DAB228700C18A94 /* Build configuration list for PBXProject "NetPartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 169C05701DAB228700C18A94;
+			productRefGroup = 169C057A1DAB228700C18A94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169C05781DAB228700C18A94 /* NetPartDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169C05771DAB228700C18A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C05E01DAB22C300C18A94 /* WTNetworkingConfiguration.plist in Resources */,
+				169C058C1DAB228700C18A94 /* LaunchScreen.storyboard in Resources */,
+				169C05891DAB228700C18A94 /* Assets.xcassets in Resources */,
+				169C05871DAB228700C18A94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABEEE48739B87F1D18C11EAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetPartDemo/Pods-NetPartDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1A9CA0C6F2634B851ABEB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A66E2B4F957E0DCEA1180A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetPartDemo/Pods-NetPartDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169C05751DAB228700C18A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169C05D31DAB22C300C18A94 /* NSURLRequest+RequestParams.m in Sources */,
+				169C05D81DAB22C300C18A94 /* WTLocationManager.m in Sources */,
+				169C05E51DAB261A00C18A94 /* RequestFirst.m in Sources */,
+				169C05DB1DAB22C300C18A94 /* WTRequestGenerator.m in Sources */,
+				169C05D91DAB22C300C18A94 /* WTLogger.m in Sources */,
+				169C05841DAB228700C18A94 /* ViewController.m in Sources */,
+				169C05DC1DAB22C300C18A94 /* WTSignatureGenerator.m in Sources */,
+				169C05CE1DAB22C300C18A94 /* NSArray+NetworkingMethods.m in Sources */,
+				169C05DD1DAB22C300C18A94 /* WTService.m in Sources */,
+				169C05D61DAB22C300C18A94 /* WTCache.m in Sources */,
+				169C05D71DAB22C300C18A94 /* WTCachedObject.m in Sources */,
+				169C05DA1DAB22C300C18A94 /* WTURLResponse.m in Sources */,
+				169C05E11DAB22C300C18A94 /* WTLoggerConfiguration.m in Sources */,
+				169C05811DAB228700C18A94 /* AppDelegate.m in Sources */,
+				169C05DF1DAB22C300C18A94 /* WTAppContext.m in Sources */,
+				169C05D11DAB22C300C18A94 /* NSObject+NetworkingMethods.m in Sources */,
+				169C05D41DAB22C300C18A94 /* APIBaseManager.m in Sources */,
+				169C05CF1DAB22C300C18A94 /* NSDictionary+NetworkingMethods.m in Sources */,
+				169C057E1DAB228700C18A94 /* main.m in Sources */,
+				169C05ED1DAB2D3700C18A94 /* FirstReformer.m in Sources */,
+				169C05D21DAB22C300C18A94 /* NSString+NetworkingMethods.m in Sources */,
+				169C05E91DAB272500C18A94 /* ServicFirst.m in Sources */,
+				169C05DE1DAB22C300C18A94 /* WTServiceFactory.m in Sources */,
+				169C05D51DAB22C300C18A94 /* WTApiProxy.m in Sources */,
+				169C05D01DAB22C300C18A94 /* NSMutableString+NetworkingMethods.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		169C05851DAB228700C18A94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C05861DAB228700C18A94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		169C058A1DAB228700C18A94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169C058B1DAB228700C18A94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		169C058E1DAB228700C18A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		169C058F1DAB228700C18A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169C05911DAB228700C18A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 769EFBD99B3BF830C49AAACB /* Pods-NetPartDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DA887996D9;
+				INFOPLIST_FILE = NetPartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wt.www.NetPartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		169C05921DAB228700C18A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FA7316B3341D0F3357C710 /* Pods-NetPartDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DA887996D9;
+				INFOPLIST_FILE = NetPartDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wt.www.NetPartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169C05741DAB228700C18A94 /* Build configuration list for PBXProject "NetPartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169C058E1DAB228700C18A94 /* Debug */,
+				169C058F1DAB228700C18A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169C05901DAB228700C18A94 /* Build configuration list for PBXNativeTarget "NetPartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169C05911DAB228700C18A94 /* Debug */,
+				169C05921DAB228700C18A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169C05711DAB228700C18A94 /* Project object */;
+}
