@@ -10,7 +10,6 @@
 #define NetWorkReadme_h
 /* 这里介绍一下Net框架的使用方法:
  * 该网络层依赖于AFNet 3.0
- *---$$$$$$$$$$$$$$$$$$$$$$$$$---- Warning ---$$$$$$$$$$$$$$
  *--->写在最前****请求子类请求对象必须被对象(一般是控制器)持有,否则请求或自动取消.报错代码 -999.
  
  *
@@ -33,12 +32,9 @@
                      1.需要每个service对应的const string 在 WTServiceFactory.m 顶部的 service name list 处定义,文件位置--> Net/Service/
                      2.WTNetworkingConfiguration.h中需要 extern 一下.文件路径--> Net/NetworkCustom/WTNetworkingConfiguration
  *
-            **************************************************************/
- /*   3.tips:请求回调返回的数据是原生数据(NSArray,NSDic),当需要特定格式时,通过实现WTAPIManagerDataReformer协议即可,转化的逻辑在WTAPIManagerDataReformer实现协议的对象中实现.
-   
- *  4.数据持久化.采用的第三方库 MagicalRecord,保存数据是注意采用的是哪个context .
- *
- 
+ *    3.tips:
+          1.请求回调返回的数据是原生数据(NSArray,NSDic),当需要特定格式时,通过实现WTAPIManagerDataReformer协议即可,转化的逻辑在WTAPIManagerDataReformer实现协议的对象中实现.
+
  */
 
 #endif /* NetWorkReadme_h */
