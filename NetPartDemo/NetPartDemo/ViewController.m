@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+    //使用代理
   //  [self.firstRequest loadDataWithParams:nil];
 
     //使用 block

@@ -115,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1671FF1E1DAF0FB300697482 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				169C05C51DAB22C300C18A94 /* NetWorkingCustoms */,
+				169C05941DAB22C300C18A94 /* NetWorking */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
 		169C05701DAB228700C18A94 = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				169C05931DAB22C300C18A94 /* WTNetPart */,
-				169C05E21DAB25E900C18A94 /* Requests */,
-				169C05E61DAB265B00C18A94 /* Servers */,
-				169C05EA1DAB2CDA00C18A94 /* Reformers */,
 				169C057F1DAB228700C18A94 /* AppDelegate.h */,
 				169C05801DAB228700C18A94 /* AppDelegate.m */,
 				169C05821DAB228700C18A94 /* ViewController.h */,
@@ -164,8 +170,10 @@
 		169C05931DAB22C300C18A94 /* WTNetPart */ = {
 			isa = PBXGroup;
 			children = (
-				169C05941DAB22C300C18A94 /* NetWorking */,
-				169C05C51DAB22C300C18A94 /* NetWorkingCustoms */,
+				1671FF1E1DAF0FB300697482 /* Net */,
+				169C05E21DAB25E900C18A94 /* Requests */,
+				169C05E61DAB265B00C18A94 /* Servers */,
+				169C05EA1DAB2CDA00C18A94 /* Reformers */,
 			);
 			path = WTNetPart;
 			sourceTree = "<group>";
@@ -315,8 +323,9 @@
 				169C05C61DAB22C300C18A94 /* AppContext */,
 				169C05CA1DAB22C300C18A94 /* Configurations */,
 			);
-			path = NetWorkingCustoms;
-			sourceTree = "<group>";
+			name = NetWorkingCustoms;
+			path = NetPartDemo/WTNetPart/NetWorkingCustoms;
+			sourceTree = SOURCE_ROOT;
 		};
 		169C05C61DAB22C300C18A94 /* AppContext */ = {
 			isa = PBXGroup;
@@ -345,6 +354,7 @@
 				169C05E41DAB261A00C18A94 /* RequestFirst.m */,
 			);
 			name = Requests;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		169C05E61DAB265B00C18A94 /* Servers */ = {
@@ -354,6 +364,7 @@
 				169C05E81DAB272500C18A94 /* ServicFirst.m */,
 			);
 			name = Servers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		169C05EA1DAB2CDA00C18A94 /* Reformers */ = {
@@ -363,6 +374,7 @@
 				169C05EC1DAB2D3700C18A94 /* FirstReformer.m */,
 			);
 			name = Reformers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6B9926A81380E76C998DE5F7 /* Frameworks */ = {
