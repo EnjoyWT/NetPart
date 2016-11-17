@@ -10,7 +10,7 @@
 
 @implementation RequestFirst
 - (NSString *)relativeURL {
-    return @"clientCate/getAllClientCategory.do";
+    return @"relativeURL";
 }
 - (Class)serviceType {
     return [ServicFirst class];

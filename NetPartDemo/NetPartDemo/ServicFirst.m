@@ -18,12 +18,12 @@
 
 - (NSString *)offlineApiBaseUrl
 {
-    return @"http://kxtest.inforcreation.cn:8773";
+    return @"offlineApiBaseUrl";
 }
 
 - (NSString *)onlineApiBaseUrl
 {
-    return @"http://kx.iwindao.cn";
+    return @"onlineApiBaseUrl";
 }
 
 - (NSString *)offlineApiVersion
