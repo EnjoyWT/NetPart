@@ -19,15 +19,19 @@
  *           1.2 可选协议:        WTAPIManagerValidator //请求参数验证协议
                                  WTAPIManagerInterceptor//求求拦截协议,可在该子类中实现,也可以在外部实现,即:内部拦截,外部拦截.
  *
- *  2.服务器的配置:
+ *  2.服务器接口的配置:
  *
         2.1 配置的生成:每个api都要配置相对应的Services,必须是WTService的子类,并实现WTServiceProtocal协议
- *      /**************************2.2,2.3请忽略****配置策略已更改,只需要在请求的子类中返回相应服务器的类即可.
-        2.2 配置的分配: WTServiceFactory负责对应api的service的分配工作.
+ *      /****2.2,2.3请忽略****配置策略已更改,只需要在请求的子类中返回相应服务器的类即可.
+ 
+            ***********2.2,2.3请忽略****配置策略已废弃*******
+        2.2 配置的分配: WTServiceFactory负责对应api的service的分配工作.(配置方法废弃)
  *
-        2.3 配置的分类: 每个service都有一个serviceType的属性,用来匹配对应的api(api的类中有对应的serviceType方法).
- *
-               2.3.1:配置标识符设置处:
+        2.3 配置的分类: 每个service都有一个serviceType的属性,用来匹配对应的api(api的类中有对应的serviceType方法).(配置方法废弃)
+ *            服务器接口最新配置策略如下:(配置方法废弃)
+                    1.直接在请求类的- (Class)serviceType 的方法中返回[yourService class] 即可;
+ 
+               2.3.1:配置标识符设置处:(配置方法废弃)
  *
                      1.需要每个service对应的const string 在 WTServiceFactory.m 顶部的 service name list 处定义,文件位置--> Net/Service/
                      2.WTNetworkingConfiguration.h中需要 extern 一下.文件路径--> Net/NetworkCustom/WTNetworkingConfiguration
